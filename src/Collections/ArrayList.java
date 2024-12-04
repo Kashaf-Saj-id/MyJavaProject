@@ -1,3 +1,5 @@
+package Collections;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -83,9 +85,13 @@ class Arraylist {
         //Filtering an arraylist
         ArrayList<Integer> filtered = List2.stream().filter(num -> num > 3).collect(Collectors.toCollection(ArrayList::new));
 
-        System.out.println("Filtered Arraylist: " + filtered);
+        System.out.println("Filtered Collections.Arraylist: " + filtered);
+
+
 
         //---------------LinkedList------------------------
+
+
 
         LinkedList<String> List3 = new LinkedList<>();
 
@@ -148,6 +154,8 @@ class Arraylist {
         Collections.sort(List4);
         System.out.println(List4);
 
+
+
         //-------USING LinkedList AS QUEUE
         LinkedList<String> q1 = new LinkedList<>();
 
@@ -169,6 +177,8 @@ class Arraylist {
 
         //Check the size of Queue
         System.out.println(q1.size());
+
+
 
         //------------VECTOR -------
 
@@ -207,5 +217,77 @@ class Arraylist {
         System.out.println(List6);
 
         System.out.println(List6.get(1));
+
+
+
+
+        //------------Stack---------------
+        Stack<Integer> s1 = new Stack<>();
+        s1.push(10);
+        s1.push(20);
+        s1.push(70);
+        System.out.println(s1);
+
+
+        //pop from the last beacuse LIFO
+        int poped = s1.pop();
+        System.out.println("Popped element:" +poped);
+        System.out.println(s1);
+
+        //top of the stack
+        int top = s1.peek();
+        System.out.println("To element of array: "+ top);
+        System.out.println(s1);
+
+        //If stack is empty
+        System.out.println(s1.isEmpty());
+
+        System.out.println("Position of 10 in stack: "+ s1.search(20) );
+
+
+
+
+        //--------------QUEUE ----------------
+        Queue<Integer> q2 = new LinkedList<>();
+        q2.add(19);
+        q2.add(89);
+        q2.add(65);
+        q2.add(86);
+        q2.add(30);
+        System.out.println(q2);
+
+        System.out.println("Element removed from queue: "+ q2.remove());
+
+        System.out.println("Top of the queue: "+q2.peek());
+
+        //Poll: returns and removes the element at the front end
+        System.out.println("Polled element: "+q2.poll());
+
+        System.out.println(q2);
+
+
+
+        //--------Periority queue --------
+
+
+                // Create a PriorityQueue of integers
+                PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+                // Add elements to the queue
+                pq.add(10);
+                pq.add(20);
+                pq.add(5);
+                pq.add(15);
+
+                // Remove and print the elements in priority order (lowest first)
+                System.out.println("Priority Queue (in order of priority):");
+                while (!pq.isEmpty()) {
+                    System.out.println(pq.remove());  // Removes and prints the element with the highest priority (smallest)
+                }
+
+
+
+
     }
+
 }
