@@ -1,0 +1,31 @@
+---------------------------------------------
+                 UserInputHandler Program
+---------------------------------------------
+
+This program demonstrates how to handle user input in Java using both the Console and Scanner classes. It is designed to calculate a user's age based on the current year and their year of birth.
+
+1. **Features:**
+   - Uses `System.console()` for input (if available).
+   - Falls back to using the `Scanner` class when console input is not available (e.g., in IDEs).
+   - Validates user input to ensure the birth year is reasonable.
+   - Uses `try-catch` blocks to handle invalid inputs.
+
+2. **Key Concepts:**
+   - **Console Input:**
+     - `System.console()` is used for direct interaction with the user through the terminal.
+     - May not work in certain environments like IDEs.
+   - **Scanner Input:**
+     - `Scanner` class is used as a fallback for reading input.
+     - Handles both valid and invalid inputs through a loop and exceptions.
+   - **Data Validation:**
+     - Ensures the birth year entered by the user falls within a valid range.
+     - Allows re-entry of data if input is invalid.
+
+3. **Execution Flow:**
+   - The program first tries to get input from the console using `getInputFromConsole()`.
+   - If the console is unavailable, it falls back to the `getInputFromScanner()` method.
+   - The user's birth year is validated, and their age is calculated.
+
+4. **Sample Input/Output:**
+
+   **Using Console (if available):**

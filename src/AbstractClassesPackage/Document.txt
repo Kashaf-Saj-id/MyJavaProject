@@ -1,0 +1,24 @@
+ Files and Classes
+ AbstractClassMain.java
+ Main class to demonstrate functionality of all classes in the package.
+
+ AbstractCar.java
+ Abstract class defining a blueprint for cars with drive() and music() methods.
+
+ Wagon.java
+ Concrete class implementing the drive() method of AbstractCar.
+
+ OuterClassAAA.java
+ Class with an inner class InnerClassBBB demonstrating inner class usage.
+
+ AbstractAnimal.java
+ Abstract class for animals with attributes and abstract methods for behavior.
+
+ Dog.java
+ Concrete class extending AbstractAnimal with specific noise and movement.
+
+ AbstractDisplay.java
+ Abstract class to demonstrate anonymous inner classes with a show() method.
+
+ ConcreteDisplay.java
+ Concrete class providing a specific implementation of show().

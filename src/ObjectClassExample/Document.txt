@@ -1,0 +1,29 @@
+----------------------------------------------
+          Understanding the Object Class in Java
+----------------------------------------------
+
+**What is the Object Class?**
+In Java, all classes inherit from the `Object` class, which is the root class of the class hierarchy. The `Object` class provides basic methods, including:
+- `toString()`: Returns a string representation of the object.
+- `equals()`: Compares two objects for equality.
+- `hashCode()`: Returns a hash code for the object.
+- `getClass()`: Returns the class of the object.
+
+**The `toString()` Method:**
+- The `toString()` method is defined in the `Object` class and is often overridden in user-defined classes to provide a more meaningful string representation of objects.
+- By default, the `toString()` method returns the class name followed by the `@` symbol and the object's hashcode.
+- It's common practice to override the `toString()` method to return a human-readable description of the object.
+
+**Code Explanation:**
+- In the code, we have two classes, `Stud` and `PrimarySchool`.
+- `Stud` represents a student with a `name` and `age`. It overrides the `toString()` method to return the name and age in a readable format.
+- `PrimarySchool` extends `Stud` and adds a `parentName`. It overrides the `toString()` method to include the parent's name in the string representation.
+- Both classes demonstrate the concept of inheritance and method overriding, which is one of the key principles of object-oriented programming.
+
+**Execution Output:**
+1. `Stud` class object (`s1`) when printed will output: `Amir is 27`.
+2. `PrimarySchool` class object (`ps1`) when printed will output: `Anza is 12 has parent Abid`.
+
+This demonstrates how the `toString()` method can be customized in subclasses to provide more detailed output.
+
+----------------------------------------------

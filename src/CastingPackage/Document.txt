@@ -1,0 +1,13 @@
+Package: CastingPackage
+
+1. Casting.java:
+   - Main class demonstrating both upcasting and downcasting.
+   - In upcasting, an object of CastB is referenced by a CastA reference.
+   - In downcasting, the CastA reference is explicitly cast back to CastB to access subclass-specific methods.
+
+2. CastA.java:
+   - Parent class with a method `show1`.
+
+3. CastB.java:
+   - Subclass of CastA with an additional method `show2`.
+   - Can be referenced by a CastA variable but also adds its own functionality.

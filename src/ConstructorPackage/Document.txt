@@ -1,0 +1,14 @@
+Package: ConstructorPackage
+
+1. Construct.java:
+   - Demonstrates constructor overloading and constructor chaining by creating objects of Minor class using different constructors.
+   - Displays the roll number and name of students using various constructors.
+
+2. Minor.java:
+   - Minor class has multiple constructors with different parameter lists to initialize the object.
+   - Constructor chaining is used to call one constructor from another within the same class.
+   - Default constructor assigns default values.
+
+Key Concepts:
+- Constructor Overloading: Defining multiple constructors with different parameters in the same class.
+- Constructor Chaining: Using 'this()' to call one constructor from another in the same class.

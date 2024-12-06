@@ -1,0 +1,15 @@
+
+Here’s the document with a one-line description for each file and class in the AggregationPackage:
+
+Package: AggregationPackage
+Demonstrates the concept of aggregation in Java through the Person and Address classes.
+
+Files and Classes
+Aggregate.java
+Main class to demonstrate aggregation by linking a Person object with an Address object.
+
+Person.java
+Represents a person with attributes name, phoneno, and an aggregated reference to an Address.
+
+Address.java
+Represents an address with attributes house and street.

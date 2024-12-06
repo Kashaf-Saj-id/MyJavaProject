@@ -1,0 +1,7 @@
+Package: BankAccountPackage
+
+1. BankA.java:
+   - Main class to interact with the BankAccount class, perform deposit and withdrawal, and display account information.
+
+2. BankAccount.java:
+   - Class representing a bank account, with methods for deposit, withdrawal, and getters and setters for account details.

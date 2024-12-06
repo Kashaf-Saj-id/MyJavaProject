@@ -1,0 +1,10 @@
+-------------------------------------------
+            Immutable Classes in Java
+-------------------------------------------
+
+An **immutable class** is a class whose objects cannot be modified once they are created. This is achieved by:
+
+1. **Declaring the class as final**: This prevents subclassing, which could alter the state of the class.
+   Example:
+   ```java
+   final class Emplo { ... }

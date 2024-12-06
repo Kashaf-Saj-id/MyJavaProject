@@ -1,0 +1,14 @@
+xPackage: InheritanceCalculatorPackage
+
+ 1. Calculator.java:
+    - Main class that creates an instance of Advance2x to perform arithmetic operations.
+    - It demonstrates inheritance by calling methods from Basic, Advnace, and Advance2x classes.
+
+ 2. Basic.java:
+    - Defines basic arithmetic operations: addition and subtraction.
+
+ 3. Advnace.java:
+    - Extends Basic class and adds multiplication and division operations.
+
+ 4. Advance2x.java:
+    - Extends Advnace class and adds power calculation operation using Math.pow().

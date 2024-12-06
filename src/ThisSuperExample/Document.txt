@@ -1,0 +1,23 @@
+----------------------------------------------
+          Understanding 'this' and 'super' in Java Constructors
+----------------------------------------------
+
+In Java, the keywords 'this' and 'super' are used in constructors for referring to the current instance of the class and the parent class, respectively. Let's break down their usage in the given example:
+
+1. **'super()' in Constructors:**
+   - Every class in Java implicitly extends the `Object` class if not explicitly specified. The `super()` keyword calls the parent class's constructor.
+   - In this example, the `A` class has two constructors: a default constructor and a parameterized constructor. Both call `super()` to invoke the constructor of `Object` (or the parent class if explicitly mentioned).
+   - In class `B`, the constructor `super()` calls the constructor of class `A`, since class `B` extends class `A`.
+
+2. **'this()' in Constructors:**
+   - The `this()` keyword refers to the current instance of the class and is used to call another constructor within the same class. This helps avoid duplicating code by reusing a constructor.
+   - In the parameterized constructor of class `B`, `this()` is called, which invokes the default constructor of `B`. This ensures that the default constructor logic of class `B` is executed before executing the parameterized constructor's logic.
+
+**Execution Flow:**
+- When the `B(int n)` constructor is called in the main method, it calls the default constructor `this()` of class `B`, which then calls the constructor `super()` of class `A`. This results in the following output:
+
+
+3. **Constructor Chaining:**
+ - Constructor chaining happens when one constructor calls another constructor. This can happen within the same class (using `this()`) or in a parent class (using `super()`).
+
+**Example Output:**

@@ -1,0 +1,12 @@
+Package: CompositionPackage
+
+1. Compose.java:
+   - Demonstrates the concept of composition where Class1 contains a reference to Class2 (address).
+   - A Class1 object is created and set with a name, phone number, and address (from Class2).
+
+2. Class1.java:
+   - Class1 represents a person and contains a reference to an address (Class2), showing a "has-a" relationship.
+
+3. Class2.java:
+   - Class2 represents an address with a house number and street name.
+   - It is used as part of Class1 (composition).

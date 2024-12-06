@@ -1,0 +1,57 @@
+----------------------------------------------
+          String Formatting and Manipulations in Java
+----------------------------------------------
+
+In Java, you can work with strings using various methods for formatting, manipulating, and performing common operations. Here are the key operations demonstrated:
+
+1. **Text Blocks (Java 13+)**:
+   Text blocks are multi-line strings enclosed in triple quotes. They preserve line breaks and indentation, which is useful for formatting text, JSON, or SQL queries.
+
+   Example: String textBlock = """ Print Bullet List: \u2022 first point \u2022 second point """;
+
+
+2. **String Formatting with printf**:
+The `printf` method allows you to format strings with placeholders. You can specify how to display numbers, dates, and more.
+
+Example: System.out.printf("The int value is %d %n", age); System.out.printf("Same value in Float will be %.2f%n", (float) age);
+
+
+3. **String.format**:
+The `String.format()` method is used for creating formatted strings.
+
+Example: String formattedString = String.format("Your age is %d", age);
+
+
+4. **String Indexing**:
+You can find the position of characters or substrings in a string using methods like `indexOf` and `lastIndexOf`.
+
+5. **String Comparisons**:
+Methods like `equals()`, `equalsIgnoreCase()`, and `startsWith()` are used to compare strings in Java.
+
+6. **String Manipulations**:
+- **replace()**: Replaces characters or substrings.
+- **replaceFirst()**: Replaces only the first occurrence.
+- **replaceAll()**: Replaces all occurrences using regular expressions.
+- **substring()**: Extracts a part of the string.
+
+7. **String Joining**:
+The `String.join()` method combines multiple strings into one, using a separator.
+
+Example: String newDate = String.join("/", "25", "11", "1992");
+
+
+
+8. **String Repeat and Indentation**:
+Methods like `repeat()` and `indent()` allow you to repeat strings and adjust indentation.
+
+9. **StringBuilder**:
+The `StringBuilder` class is used for creating mutable strings, which is more efficient when performing multiple string modifications.
+
+10. **String Methods**:
+ - **isEmpty()**: Checks if a string is empty.
+ - **isBlank()**: Checks if a string is empty or contains only whitespace.
+ - **charAt()**: Returns the character at a specific index.
+ - **toLowerCase() / toUpperCase()**: Converts strings to lowercase or uppercase.
+ - **trim()**: Removes whitespace from the start and end.
+
+**Example Output**:

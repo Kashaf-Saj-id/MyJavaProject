@@ -1,0 +1,13 @@
+-------------------------------------------
+               Final Keyword Concept
+-------------------------------------------
+
+The `final` keyword in Java is used to define constants, prevent method overriding, and prevent class inheritance.
+It can be used in three different contexts:
+
+1. **Final Variable**:
+   When a variable is declared as `final`, its value cannot be changed once assigned.
+   This makes it a constant.
+   Example:
+   ```java
+   final int max_speed = 120;

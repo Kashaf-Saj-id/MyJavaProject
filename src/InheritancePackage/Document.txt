@@ -1,0 +1,23 @@
+-------------------------------------------
+             Inheritance in Java
+-------------------------------------------
+
+**What is Inheritance in Java?**
+Inheritance is a fundamental concept of Object-Oriented Programming (OOP) where a class (child or subclass) inherits properties and behaviors (methods) from another class (parent or superclass). This allows code reusability and establishes a relationship between the parent and child classes.
+
+**Key Points:**
+1. A subclass can inherit fields and methods from a parent class.
+2. A subclass can override methods of the parent class.
+3. Java supports single inheritance, meaning a class can inherit from only one class.
+
+**Classes in This Package:**
+- **Worker Class**: Represents a basic worker with name, date of birth (DOB), and methods for age calculation and collecting pay.
+- **Employee Class**: Inherits from `Worker` and adds employee-specific details such as `employeeId` and `hireDate`.
+- **Salary Class**: Extends `Employee` to add salary details (not fully implemented in this example).
+- **Car Class**: A simple class demonstrating inheritance by displaying car details, with the ability to set and get the car model.
+- **Animal and Dog Classes**: Demonstrate inheritance where `Dog` extends `Animal` and adds dog-specific behaviors like barking and tail wagging.
+
+**Constructor Chaining:**
+In the `Dog` class, the constructor uses `super()` to call the constructor of the `Animal` class. This allows `Dog` objects to inherit the properties of `Animal`.
+
+-------------------------------------------

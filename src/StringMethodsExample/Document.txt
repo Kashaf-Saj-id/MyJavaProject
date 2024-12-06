@@ -1,0 +1,64 @@
+----------------------------------------------
+          String Methods in Java
+----------------------------------------------
+
+In Java, the String class provides many methods to manipulate and work with strings. Here are some commonly used methods:
+
+1. **length()**:
+   Returns the number of characters in the string.
+
+2. **charAt(int index)**:
+   Returns the character at the specified index in the string.
+
+3. **substring(int start)**:
+   Returns a substring starting from the specified index to the end of the string.
+
+4. **substring(int start, int end)**:
+   Returns a substring from the start index to the end index (exclusive).
+
+5. **equals(String other)**:
+   Compares the string with the specified string for equality (case-sensitive).
+
+6. **equalsIgnoreCase(String other)**:
+   Compares the string with the specified string, ignoring case.
+
+7. **toLowerCase()**:
+   Converts the string to lowercase.
+
+8. **toUpperCase()**:
+   Converts the string to uppercase.
+
+9. **trim()**:
+   Removes leading and trailing whitespace from the string.
+
+10. **replace(char oldChar, char newChar)**:
+    Replaces all occurrences of the specified old character with the new character.
+
+11. **replaceAll(String regex, String replacement)**:
+    Replaces all substrings that match the given regular expression with the specified replacement.
+
+12. **split(String regex)**:
+    Splits the string into an array of substrings based on the specified delimiter (regular expression).
+
+13. **indexOf(String str)**:
+    Returns the index of the first occurrence of the specified substring. Returns -1 if not found.
+
+14. **contains(CharSequence sequence)**:
+    Checks if the string contains the specified sequence of characters.
+
+15. **concat(String str)**:
+    Concatenates the specified string to the end of the current string.
+
+16. **valueOf()**:
+    Converts other types (e.g., int, double, boolean) to a string.
+
+17. **isEmpty()**:
+    Checks if the string is empty (i.e., has length 0).
+
+18. **matches(String regex)**:
+    Checks if the string matches the given regular expression.
+
+**Example Explanation**:
+In the provided example, different string methods are demonstrated on the string `"Hello, World!"`. These methods perform operations such as checking string length, replacing characters, converting case, trimming spaces, splitting the string, etc.
+
+**Output of Example**:

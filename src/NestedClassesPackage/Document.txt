@@ -1,0 +1,47 @@
+-------------------------------------------
+           Understanding Nested Classes in Java
+-------------------------------------------
+
+**What are Nested Classes?**
+In Java, a nested class is a class that is defined within another class. There are four types of nested classes:
+1. **Static Nested Class**
+2. **Non-static Nested Class (Inner Class)**
+3. **Local Nested Class**
+4. **Anonymous Inner Class**
+
+Each type of nested class serves different purposes and has unique characteristics.
+
+**Types of Nested Classes:**
+
+1. **Static Nested Class:**
+   - A static class is defined inside another class with the `static` keyword.
+   - It can be accessed without an instance of the outer class.
+   - Static nested classes can only access static members of the outer class.
+   - Example in `Outer.java` (class `InnerStaticClass`).
+
+2. **Non-static Nested Class (Inner Class):**
+   - A non-static nested class, or inner class, is associated with an instance of the outer class.
+   - It can access both static and non-static members of the outer class.
+   - An object of the outer class is required to instantiate the inner class.
+   - Example in `Outer2.java` (class `InnerNonStatic`).
+
+3. **Local Nested Class:**
+   - A local nested class is defined inside a method of the outer class.
+   - It is accessible only within the method where it is defined.
+   - The scope is limited to the method, and it cannot be accessed outside the method.
+   - Example in `Outer3.java` (class `LocalInner` inside the `outerMethod`).
+
+4. **Anonymous Inner Class:**
+   - An anonymous class is a subclass of a class or an implementation of an interface.
+   - It has no name and is defined at the moment of instantiation.
+   - It is commonly used when you need a one-time implementation.
+   - Example in `NestedClassesExample.java` (implementation of `Greeting` interface).
+
+**Code Execution:**
+1. In `NestedClassesExample.java`, the `main` method demonstrates the use of different types of nested classes.
+2. The static nested class (`InnerStaticClass`) is instantiated without needing an object of the outer class.
+3. The non-static nested class (`InnerNonStatic`) is instantiated using an object of the outer class (`Outer2`).
+4. An anonymous inner class is created to implement the `Greeting` interface.
+5. The local nested class (`LocalInner`) is used inside the method `outerMethod` of the `Outer3` class.
+
+-------------------------------------------

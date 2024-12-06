@@ -1,0 +1,24 @@
+----------------------------------------------
+            Understanding POJO in Java
+----------------------------------------------
+
+**What is a POJO?**
+A POJO (Plain Old Java Object) is a simple Java object that doesn't extend or implement any special classes or interfaces. It typically:
+- Has private fields (attributes).
+- Provides public constructors.
+- Has getter and setter methods to access the fields.
+- Does not have any complex behavior.
+
+**Why Use POJOs?**
+POJOs are used to represent data in an object-oriented manner. They are often used to:
+- Represent entities in databases (in conjunction with ORM tools like Hibernate).
+- Carry data between different layers of an application.
+- Serve as simple data containers.
+
+**Code Explanation:**
+- The `Student` class in the code is a simple POJO that represents a student with `name` and `id` fields.
+- The `Student` class has a constructor to initialize the fields when creating a new object.
+- In the `PojoclassDemo` class, we create 5 instances of the `Student` class and print out their `name` and `id` attributes.
+
+**Execution Output:**
+The `for` loop in the `main` method will create 5 `Student` objects and print their name and id:

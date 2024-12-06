@@ -1,0 +1,26 @@
+-------------------------------------------
+           Understanding Interfaces in Java
+-------------------------------------------
+
+**What is an Interface in Java?**
+An interface in Java is a reference type, similar to a class, that can contain only constants, method signatures, default methods, static methods, and nested types. Interfaces cannot contain instance fields or constructors.
+
+**Key Points:**
+1. **Abstract Methods**: All methods in an interface are implicitly abstract (except static and default methods), and they must be implemented by the class that implements the interface.
+2. **Constants**: Fields in an interface are implicitly `public`, `static`, and `final`.
+3. **Multiple Inheritance**: Java allows a class to implement multiple interfaces, enabling a form of multiple inheritance.
+4. **Implementation**: A class that implements an interface must provide concrete implementations for all the methods declared in the interface.
+
+**Classes in This Package:**
+- **Interface D**: This interface declares two abstract methods (`method1` and `method2`) and contains constant fields (`age` and `area`).
+- **Class C**: This class implements the `D` interface and provides the concrete implementation for both `method1` and `method2`.
+
+**Key Concepts in the Example:**
+- **Interface Declaration**: The `D` interface declares the methods `method1` and `method2` which must be implemented by any class that implements the interface.
+- **Implementing Interface**: Class `C` implements the interface `D` by providing concrete implementations for both `method1` and `method2`.
+
+**Code Execution:**
+1. The `main` method in the `InterfaceExample` class creates an object of class `C`.
+2. The `method1` and `method2` methods are called on the object, producing the output "method1" and "method2" respectively.
+
+-------------------------------------------

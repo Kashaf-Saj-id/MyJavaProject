@@ -1,0 +1,92 @@
+---------------------------------------------
+             Regular Expressions in Java
+---------------------------------------------
+
+**Introduction:**
+A Regular Expression (Regex) is a sequence of characters that defines a search pattern. It is widely used in string matching, validation, and search-and-replace operations.
+
+Java provides a package `java.util.regex` that contains:
+1. `Pattern` - Represents the compiled version of the regex.
+2. `Matcher` - Performs match operations on the input text.
+
+---
+
+**Code Description:**
+The `Regex` class demonstrates the usage of regular expressions in Java through the following examples:
+
+1. **Matching Single Digits (`\\d`):**
+   - `\\d` matches any single digit (0-9).
+   - Example: Matches `2`, `3`, and `456` as separate digits.
+
+2. **Matching Complete Numbers (`\\d+`):**
+   - `\\d+` matches one or more digits in a sequence.
+   - Example: Matches `2`, `3`, `23`, and `456` as whole numbers.
+
+3. **Matching Alphanumeric Words (`\\w+`):**
+   - `\\w+` matches words containing letters, digits, or underscores.
+   - Example: Matches `I`, `have`, `2`, `apples`, etc.
+
+4. **Matching Specific Words (e.g., `'apples'`):**
+   - Matches the exact word `'apples'` in the input text.
+
+---
+
+**Regex Syntax and Patterns:**
+
+1. **Character Classes:**
+   - `\\d` : Matches any digit (0-9).
+   - `\\D` : Matches any non-digit character.
+   - `\\w` : Matches any alphanumeric character or underscore.
+   - `\\W` : Matches any non-alphanumeric character.
+   - `\\s` : Matches any whitespace character (space, tab, newline).
+   - `\\S` : Matches any non-whitespace character.
+
+2. **Quantifiers:**
+   - `*` : Matches 0 or more occurrences.
+   - `+` : Matches 1 or more occurrences.
+   - `?` : Matches 0 or 1 occurrence.
+   - `{n}` : Matches exactly `n` occurrences.
+   - `{n,}` : Matches `n` or more occurrences.
+   - `{n,m}` : Matches between `n` and `m` occurrences.
+
+3. **Anchors:**
+   - `^` : Matches the start of the string.
+   - `$` : Matches the end of the string.
+
+4. **Special Characters:**
+   - `.` : Matches any character except newline.
+   - `|` : Acts as an OR operator.
+   - `()` : Groups regex patterns.
+   - `[]` : Defines a character set.
+   - `\\` : Escapes special characters.
+
+---
+
+**How It Works:**
+
+1. **Pattern Compilation:**
+   - A regex pattern is compiled using the `Pattern.compile()` method.
+   - Example:
+     ```java
+     Pattern regex = Pattern.compile("\\d");
+     ```
+
+2. **Matcher Creation:**
+   - A `Matcher` object is created to perform matching on the input text.
+   - Example:
+     ```java
+     Matcher matcher = regex.matcher(text);
+     ```
+
+3. **Finding Matches:**
+   - Use `matcher.find()` to locate the next match in the text.
+   - Use `matcher.group()` to retrieve the matched text.
+
+---
+
+**Output Example:**
+Given the text:
+"I have 2 apples and 3 oranges, 23 bananas, and 456 grapes."
+
+The program outputs:
+1. **Matching single digits:**

@@ -1,0 +1,19 @@
+Package: DesignPatternsPackage
+
+1. DesginPatterns.java:
+   - Demonstrates Singleton, Factory, and Abstract Factory design patterns with examples of their usage.
+
+2. Singleton.java:
+   - Implements Singleton design pattern to ensure only one instance of the class is created.
+   - Uses double-checked locking to make the method thread-safe.
+
+3. FactoryPattern.java:
+   - Implements Factory design pattern to create objects (Circle and Square) without specifying the exact class.
+
+4. AbstractFactoryPattern.java:
+   - Implements Abstract Factory design pattern to create families of related objects (Cars and Dolls) with concrete factories for Red and Blue toys.
+
+Key Concepts:
+- Singleton Pattern: Ensures only one instance of a class is created.
+- Factory Pattern: Provides a way to create objects without specifying the exact class.
+- Abstract Factory Pattern: Creates families of related objects without specifying their concrete classes.
